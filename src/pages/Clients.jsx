@@ -1,9 +1,11 @@
-import React from 'react'
-
+import React from "react";
+import Gallery from "../components/Gallery";
 const Clients = () => {
   return (
-    <div>Clients</div>
-  )
-}
+    <>
+      <Gallery />
+    </>
+  );
+};
 
-export default Clients
+export default Clients;

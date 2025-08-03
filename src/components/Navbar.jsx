@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { FaBars, FaTimes } from "react-icons/fa";
 
-import logoImage from "../../public/MSF Logo.png";
+import logoImage from "../assets/images/MSF Logo.png";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -21,9 +21,9 @@ const Navbar = () => {
       <nav className="navbar">
         <div className="navbar-container">
           <div className="logo">
-            <Link to="/" className="logo-link" onClick={closeMenu}>
+            <a href="/" className="logo-link" onClick={closeMenu}>
               <img src={logoImage} alt="" />
-            </Link>
+            </a>
           </div>
 
           {/* Hamburger Button */}

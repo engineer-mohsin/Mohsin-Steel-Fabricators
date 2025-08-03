@@ -8,6 +8,8 @@ import Services from "../pages/Services";
 // Components
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import WhatsAppButton from "../components/WhatsAppButton";
+
 
 // Packages
 import { BrowserRouter, Routes, Route } from "react-router-dom";
@@ -24,6 +26,7 @@ const AppRoutes = () => {
           <Route path="/clients" element={<Clients />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
+      <WhatsAppButton/>
         <Footer />
       </BrowserRouter>
     </>

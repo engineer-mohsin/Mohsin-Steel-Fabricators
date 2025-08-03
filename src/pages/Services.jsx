@@ -42,29 +42,7 @@ const ProductData = [
     name: "Balcony & Stair Railings",
     image: gates,
     description: "Stylish railings crafted for both indoor and outdoor spaces.",
-  },
-  {
-    name: "Fire-Rated Metal Doors",
-    image: gates,
-    description:
-      "High-security, fire-resistant doors for critical applications.",
-  },
-  {
-    name: "Wall-Mounted Steel Cabinets",
-    image: gates,
-    description:
-      "Space-saving steel cabinets for residential or commercial use.",
-  },
-  {
-    name: "Luxury Steel Sofa Sets",
-    image: gates,
-    description: "Elegant furniture frames made from precision-welded steel.",
-  },
-  {
-    name: "Office & Cafe Tables",
-    image: gates,
-    description: "Custom steel tables for modern workspaces and dining areas.",
-  },
+  }
 ];
 
 const Services = () => {

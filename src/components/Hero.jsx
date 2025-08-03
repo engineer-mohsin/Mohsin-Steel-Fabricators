@@ -2,16 +2,14 @@ import React, { useEffect, useState, useRef } from "react";
 import "../stylesheets/Hero.css";
 
 // Static image imports
+
 import img1 from "../assets/images/img-1.jpg";
 import img2 from "../assets/images/img-2.jpg";
 import img3 from "../assets/images/img-3.jpg";
 import img4 from "../assets/images/img-4.jpg";
 import img5 from "../assets/images/img-5.jpg";
-import img6 from "../assets/images/img-6.jpg";
-import img7 from "../assets/images/img-7.jpg";
-import img8 from "../assets/images/img-8.jpg";
 
-const images = [img1, img2, img3, img4, img5, img6, img7, img8];
+const images = [img1, img2,img3,img4,img5];
 
 const Hero = () => {
   const [currentIndex, setCurrentIndex] = useState(0);

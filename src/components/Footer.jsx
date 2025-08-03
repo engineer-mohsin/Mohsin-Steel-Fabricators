@@ -2,7 +2,7 @@
 import React from "react";
 import "../stylesheets/Footer.css";
 import { Link } from "react-router-dom";
-import logoImage from "../../public/MSF Logo.png";
+import logoImage from "../assets/images/MSF Logo.png";
 
 import {
   FaFacebookF,
@@ -18,9 +18,9 @@ const Footer = () => {
       <div className="footer-container">
         {/* Column 1: Logo & Description */}
         <div className="footer-col logo-col">
-          <Link to="/">
-            <img src={logoImage} alt="" />
-          </Link>
+          <a href="/">
+            <img src={logoImage} alt="Logo" />
+          </a>
           <p>
             Delivering top-grade steel products with unmatched durability and
             performance. Your trusted partner in construction and fabrication.

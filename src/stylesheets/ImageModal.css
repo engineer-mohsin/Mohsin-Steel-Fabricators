@@ -37,7 +37,7 @@
 .modal-close {
   position: absolute;
   top: 15px;
-  right: 20px;
+  right: 25px;
   font-size: 2rem;
   background: transparent;
   color: var(--forge-yellow);
