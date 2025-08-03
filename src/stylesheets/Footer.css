@@ -1,0 +1,107 @@
+/* ========== FOOTER MAIN STYLES ========== */
+.footer {
+  background-color: var(--dark-charcoal);
+  color: var(--text-light);
+  padding: 3rem 2rem 1rem;
+}
+
+/* ========== FOOTER CONTAINER ========== */
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+}
+
+/* ========== LOGO COLUMN ========== */
+.logo-col img {
+  width: 150px;
+  height: auto;
+  margin-bottom: 1rem;
+  object-fit: contain;
+  display: block;
+}
+
+.logo-col p {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: var(--metal-silver);
+}
+
+/* ========== FOOTER COLUMNS ========== */
+.footer-col h3 {
+  color: var(--forge-yellow);
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.footer-col p,
+.footer-col li,
+.footer-col a {
+  font-size: 0.95rem;
+  color: var(--text-light);
+  margin-bottom: 0.5rem;
+  text-decoration: none;
+}
+
+.footer-col a:hover {
+  color: var(--forging-orange);
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+}
+
+/* ========== FOOTER LOGO TEXT (IF USED INSTEAD OF IMAGE) ========== */
+.footer-logo {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: var(--forge-yellow);
+}
+
+/* ========== SOCIAL ICONS ========== */
+.social-icons {
+  display: flex;
+  gap: 0.7rem;
+}
+
+.social-icons a {
+  background-color: var(--iron-blue);
+  padding: 0.5rem;
+  border-radius: 50%;
+  display: inline-flex;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  color: var(--text-light);
+}
+
+/* Hover colors per platform */
+.social-icons a.facebook:hover {
+  color: #1877f2;
+}
+
+.social-icons a.instagram:hover {
+  color: #e1306c;
+}
+
+.social-icons a.whatsapp:hover {
+  color: #25d366;
+}
+
+/* ========== ICON ALIGNMENT ========== */
+.icon {
+  margin-right: 0.5rem;
+  vertical-align: middle;
+}
+
+/* ========== FOOTER BOTTOM ========== */
+.footer-bottom {
+  text-align: center;
+  margin-top: 2rem;
+  border-top: 1px solid var(--border-line);
+  padding-top: 1rem;
+  font-size: 0.85rem;
+  color: var(--metal-silver);
+}

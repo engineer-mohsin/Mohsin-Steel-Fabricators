@@ -1,0 +1,135 @@
+/* Base styles */
+.navbar {
+  background-color: var(--dark-charcoal);
+  color: var(--text-light);
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 4px var(--shadow-dark);
+  position: relative;
+  z-index: 10;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: auto;
+  flex-wrap: wrap;
+}
+
+.logo img {
+  height: auto;
+  width: 50px;
+  display: block;
+  object-fit: contain;
+}
+
+.hamburger {
+  display: none;
+  font-size: 1.8rem;
+  background: none;
+  border: none;
+  color: var(--text-light);
+  cursor: pointer;
+}
+
+.nav-links-container {
+  display: flex;
+  align-items: center;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  color: inherit;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links a.active {
+  color: var(--forge-yellow);
+  font-weight: 600;
+  border-bottom: 2px solid var(--forge-yellow);
+}
+
+.nav-links a:hover {
+  color: var(--forge-yellow);
+}
+
+.whatsapp-btn {
+  background-color: var(--forging-orange);
+  color: var(--text-light);
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.whatsapp-btn:hover {
+  background-color: var(--hammer-red);
+}
+
+/* Desktop-only CTA */
+.nav-cta {
+  display: block;
+}
+
+.nav-cta-mobile {
+  display: none;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .logo img {
+    height: 40px;
+  }
+  .hamburger {
+    display: block;
+  }
+
+  .nav-cta {
+    display: none;
+  }
+
+  .nav-cta-mobile {
+    display: block;
+  }
+
+  .nav-links-container {
+    width: 100%;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.3s ease-in-out;
+    flex-direction: column;
+  }
+
+  .nav-links-container.active {
+    max-height: 500px;
+    margin-top: 1rem;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    width: 100%;
+    gap: 1rem;
+  }
+
+  .nav-links li {
+    width: 100%;
+    text-align: left;
+  }
+
+  .nav-links a,
+  .contact-btn {
+    width: 100%;
+    display: block;
+  }
+}

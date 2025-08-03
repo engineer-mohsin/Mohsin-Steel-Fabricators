@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  /* Primary Industrial Colors */
+  --steel-gray: #2e2e2e; /* Dark Steel Gray - Backgrounds / Text */
+  --metal-silver: #c0c0c0; /* Light Silver - Highlights / Borders */
+  --iron-blue: #37474f; /* Cool Iron Blue - Sections / Overlays */
+
+  /* Accent Colors */
+  --forging-orange: #ff6f00; /* Hot Metal Glow - Buttons / CTA */
+  --hammer-red: #d84315; /* Heated Iron - Alerts / Hover States */
+  --forge-yellow: #f9a825; /* Accent Yellow - Icons / Highlights */
+
+  /* Neutral Backgrounds */
+  --light-gray: #f5f5f5; /* Light BG for Sections */
+  --dark-charcoal: #1c1c1c; /* Footer / Headers */
+  --text-light: #ffffff;
+  --text-dark: #212121;
+
+  /* Shadows / Lines */
+  --border-line: #b0bec5;
+  --shadow-dark: rgba(0, 0, 0, 0.2);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  min-height: 100%;
+  background-color: var();
+  font-family: "Roboto", sans-serif;
+}
